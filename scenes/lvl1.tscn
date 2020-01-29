@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="BoxShape" id=1]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="players" type="Node" parent="."]
+
+[node name="spawn_points" type="Node" parent="."]
+
+[node name="0" type="Spatial" parent="spawn_points"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.9671, 1.14495, 0 )
+
+[node name="1" type="Spatial" parent="spawn_points"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.8143, 1.14495, 0 )
+
+[node name="2" type="Spatial" parent="spawn_points"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.9671, 1.14495, 3.57643 )
+
+[node name="3" type="Spatial" parent="spawn_points"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.8143, 1.14495, 3.57643 )
+
+[node name="RigidBody" type="RigidBody" parent="."]
+transform = Transform( 117.714, 0, 0, 0, 1.14827, 0, 0, 0, 106.427, 0, -8.83709, 0 )
+mode = 1
+
+[node name="CSGBox" type="CSGBox" parent="RigidBody"]
+transform = Transform( 0.194005, 0, 0, 0, 0.281822, 0, 0, 0, 0.178652, 0, -0.653552, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody"]
+transform = Transform( 0.194005, 0, 0, 0, 0.281822, 0, 0, 0, 0.178652, 0, -0.602572, 0 )
+shape = SubResource( 1 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.668875, -0.348343, 0.656706, 0, 0.883412, 0.468596, -0.743375, -0.313433, 0.590893, 28.7043, 3.96568, 21.3447 )

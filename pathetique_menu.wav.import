@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pathetique_menu.wav-3ff0b86abc6cfeb17b7d5ac05a03c210.sample"
+
+[deps]
+
+source_file="res://pathetique_menu.wav"
+dest_files=[ "res://.import/pathetique_menu.wav-3ff0b86abc6cfeb17b7d5ac05a03c210.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

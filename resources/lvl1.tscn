@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/Playerwbox.tscn" type="PackedScene" id=1]
+
+
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 5.44961, 0.0999051, 5.70179 )
+
+[node name="Scene Root" type="Spatial"]
+
+[node name="Light" type="OmniLight" parent="."]
+transform = Transform( 0.290865, -0.771101, -0.566393, 0.0551891, 0.604525, -0.794672, 0.955171, 0.199884, 0.218392, 4.07624, 6.05502, -2.95147 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 5.19171, 0, 0, 0, 0.965705, 0, 0, 0, 3.89171, 0, 0.265764, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
+transform = Transform( -5.42, 0, -8.53126e-007, 0, 0.09, 0, 8.18397e-007, 0, -5.65, -0.212787, -0.148833, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( -1, 0, -1.50996e-007, 0, 1, 0, 1.50996e-007, 0, -1, -0.214172, -0.171187, 0 )
+shape = SubResource( 2 )
+
+[node name="KinematicBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.23352, 0 )

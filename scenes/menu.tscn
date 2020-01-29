@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://media.io_menu0001-1000.webm" type="VideoStream" id=1]
+[ext_resource path="res://scripts/VideoPlayer.gd" type="Script" id=2]
+[ext_resource path="res://scripts/PlayButton.gd" type="Script" id=3]
+[ext_resource path="res://pathetique_menu.wav" type="AudioStream" id=4]
+[ext_resource path="res://scripts/AudioStreamPlayer.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Potra.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 72
+font_data = SubResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+margin_left = -1.0
+margin_top = -3.0
+margin_right = 1031.0
+margin_bottom = 602.0
+stream = ExtResource( 1 )
+autoplay = true
+buffering_msec = 1000
+script = ExtResource( 2 )
+
+[node name="PlayButton" type="MenuButton" parent="."]
+margin_left = 469.011
+margin_top = 431.97
+margin_right = 961.011
+margin_bottom = 515.97
+script = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="PlayButton"]
+margin_left = 1.66534
+margin_top = -0.667297
+margin_right = 487.665
+margin_bottom = 85.3327
+custom_fonts/font = SubResource( 2 )
+text = "The Preserve"
+align = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+script = ExtResource( 5 )
