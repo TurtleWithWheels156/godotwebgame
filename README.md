@@ -8,10 +8,10 @@ Local Multiplayer via websockets
 <br>
 Notes:
 <br>
--To build, click on the Export tab, add HTML5 and Windows Desktop as targets then hit export all to release
+-To build, click on the Export tab, add the Windows Desktop as a target then hit export all to release
 <br>
 -Start local server on a .exe build for the host computer
 <br>
--Have players join via whatever web deployment method for the game, using
+-Have players join via desktop method for the game, using
 <br>
- the host IP
+ the host IP (or localhost if running two apps on the same machine)
