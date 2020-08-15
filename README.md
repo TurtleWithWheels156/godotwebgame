@@ -12,6 +12,6 @@ Notes:
 <br>
 -Start local server on a .exe build for the host computer
 <br>
--Have players join via desktop method for the game, using
+-Before starting match, have players join via desktop method for the game, using
 <br>
  the host IP (or localhost if running two apps on the same machine)
